@@ -1,3 +1,8 @@
+/*aqui fica a page object
+que servem para encapsular cada página acessada dentro de uma classe para definirmos atributos e 
+métodos, seguindo o conceito de orientação a objetos.
+*/
+
 'use strict'
  
 class ListagemPage{
@@ -12,7 +17,4 @@ class ListagemPage{
 }
 module.exports = ListagemPage;
 
-/*aqui fica a page object
-que servem para encapsular cada página acessada dentro de uma classe para definirmos atributos e 
-métodos, seguindo o conceito de orientação a objetos.
-*/
+
