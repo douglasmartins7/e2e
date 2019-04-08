@@ -2,3 +2,63 @@ comando para execução
     protractor jasmine-example/protractor.conf.js
 
 
+
+element
+element.all,
+
+
+by.addLocator
+   <input type="text" ng-model="PokemonsController.filtro" data-test="filtro">
+
+    vai JS
+        document.querySelector('[data-test="filtro"]')
+
+    by.addLocator('dataTest',function(text) {
+ 	return document.querySelector(`[data-test="${text}"]`)
+    });
+
+    element(by.dataTest('filtro'));
+
+
+
+    <button>Carregar mais Posts</button>
+    element(by.partialButtonText('Carregar'));
+
+
+
+    <ul>
+        <li class="pokemon">Bulbasaur</li>
+        <li class="pokemon">Charizard</li>
+    </ul>
+
+
+    Então, se quisermos saber o valor de um determinado elemento, precisamos fazer assim:
+        var pokemonName = element(by.model('pokemon.name'));
+        pokemonName.getText().then(function(text) {
+        console.log(text);
+        });
+
+
+    Se quisermos saber se um elemento está habilitado:
+        var bulbasaur = element(by.cssContainingText('.pokemon', 'Bulbasaur'));
+        var saveButton = element(by.buttonText('Salvar'));
+        saveButton.isEnabled().then(function(enable) {
+        console.log(enable);
+        });
+
+
+    Se quisermos saber se um elemento está visível:
+    var saveButton = element(by.buttonText('Salvar'));
+    saveButton.isDisplayed().then(function(visible) {
+    console.log(visible);
+    });
+
+
+
+
+
+
+
+
+click(), getText() e sendKeys().
+
