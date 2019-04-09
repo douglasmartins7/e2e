@@ -2,13 +2,16 @@
  "name": "protractor-style-guide",
  "version": "1.0.0",
  "devDependencies": {
-  "cucumber-html-reporter": "^4.0.5",
-  "jasmine-spec-reporter": "^3.2.0",
-  "protractor": "^4.0.3",
-  "protractor-cucumber-framework": "^6.1.1"
+  "cucumber-html-reporter": "^4.0.5"
  },
  "dependencies": {
-  "chai-as-promised": "^7.1.1",
-  "cucumber-pretty": "^1.5.0"
+  "chai": "^3.5.0",
+  "chai-as-promised": "^6.0.0",
+  "cucumber": "^5.1.0",
+  "cucumber-pretty": "^1.5.0",
+  "protractor": "^5.4.2",
+  "protractor-cucumber-framework": "^6.1.1",
+  "node-testing-server": "^1.2.2",
+  "eslint": "^3.17.1"
  }
 }
