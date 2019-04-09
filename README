@@ -1,5 +1,5 @@
 comando para execução
-    protractor jasmine-example/protractor.conf.js
+    protractor features/protractor.conf.js
 
 
 
