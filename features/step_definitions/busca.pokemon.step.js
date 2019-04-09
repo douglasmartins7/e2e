@@ -9,11 +9,11 @@ chai.use(chaiAsPromised);
 
 defineSupportCode(function ({ Given, When, Then }) {
     
-    var url = 'https://www.concrete.com.br/'
+    var url = 'https://www.google.com/'
 
     Given('que eu estou na tela de listagem de pokémons', function () {
         browser.get(url).then(function () {
-            callback();
+            //alert("Agora vai")
         });
       });
    
