@@ -13,8 +13,21 @@ defineSupportCode(function ({ Given, When, Then }) {
 
     Given('que eu estou na tela de listagem de pokémons', function () {
         browser.get(url).then(function () {
-            //alert("Agora vai")
+            browser.sleep(50000);
+            element(by.css("a[id='fsettl']")).click();
+            //acessa o chrome mais não interage com o IU    
         });
-      });
+    });
+
+    When('digito algo', function () {
+        
+    });
+
+    Then('acesso tela com opções de sites', function () {
+    // Write code here that turns the phrase above into concrete actions
+    return 'pending';
+    });
+
+
    
 });
